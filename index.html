@@ -9,9 +9,9 @@
         <div class="container">
             <nav class="main-navigation">
                 <div class="logo">
-                    <img src="http://placehold.it/110x60" alt="City of Sedona!">
+                    <a href="#"><img src="http://placehold.it/110x60" alt="City of Sedona!"></a>
                 </div>
-                <ul>
+                <ul class="nav-list">
                     <li>
                         <a href="#">Информация</a>
                     </li>
@@ -38,8 +38,8 @@
         </section>
         <section class="features-blue">
             <div class="features-item">
-               <h2 class="features-name">Настоящий городок</h2>
-                <p>- №1 -</p>
+               <span class="features-name">Настоящий городок</span>
+                <span>- №1 -</span>
                 <p>Седона - не аттракцион для туристов, там течет своя жизнь</p> 
             </div>
             <div class="features-image">
@@ -65,31 +65,31 @@
                 <img src="http://placehold.it/625x200" alt="2. Там есть мост дьявола!">
             </div>
             <div class="features-item">
-                <h2 class="features-name">Там есть мост дьявола</h2>
-                <p>- №2 -</p>
+                <span class="features-name">Там есть мост дьявола</span>
+                <span>- №2 -</span>
                 <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
             </div>
         </section>
         <section class="features-grey">
             <div class="features-item">
-                <h2 class="features-name">Небольшая площадь</h2>
-                <p>- №3 -</p>
+                <span class="features-name">Небольшая площадь</span>
+                <span>- №3 -</span>
                 <p>Все достопримечательности находятся очень близко</p>
             </div>
             <div class="features-item">
-                <h2 class="features-name">Красивая дорога</h2>
-                <p>- №4 -</p>
+                <span class="features-name">Красивая дорога</span>
+                <span>- №4 -</span>
                 <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
             <div class="features-item">
-                <h2 class="features-name">Мало туристов</h2>
-                <p>- №5 -</p>
+                <span class="features-name">Мало туристов</span>
+                <span>- №5 -</span>
                 <p>Большинство едет в Гранд Каньон и толпится там</p>
             </div>
         </section>
         <section class="features-white">
-            <p class="features-name">Заинтересовались?</p>
-            <p>укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+            <b class="features-name">Заинтересовались?</b>
+            <a class="hotel-search" href="#">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</a>
             <input type="submit" value="Поиск гостиниц в седоне" id="hotel-search">
         </section>
         <section class="map">
@@ -97,7 +97,7 @@
         </section>
         <section class="footer-container">
             <div class="footer-tag">
-                #visitsedona
+                <a class="tag-visit-sedona" href="#">#visitsedona</a>
             </div>
             <div class="footer-social">
                 <a class="social-tw" href="#">Твиттер</a>
@@ -111,7 +111,7 @@
         </section>
     </main>
         <section class="popup">
-            <form class="popup-form" action="#" method="post">
+            <form class="popup-form" action="#" method="get">
                 
                 <label for="date-arrive">Дата заезда:</label>
                 <input type="date" name="calendar" id="date-arrive" value="24 апреля 2016"><br>
@@ -125,7 +125,7 @@
                 <label for="amount-child">Дети:</label>
                 <input type="number" id="amount-child" value="0"><br>
                 
-                <a class="search" href="#">Найти</a>
+                <input type="submit" id="submit-find" value="Найти"> 
                 
             </form>
         </section>
