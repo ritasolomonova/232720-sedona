@@ -3,12 +3,10 @@ body {
     line-height: 16px;
     color: #000000;
     font-weight: normal;
-    font-family: PTSans;
+    font-family: PTSans, Arial, sans-serif;
 }
 h1 {
     font-size: 21px;
     line-height: 26px;
-    color: #000000;
     font-weight: bold;
-    font-family: PTSans;
 }
