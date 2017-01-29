@@ -1,12 +1,138 @@
+*, *::before, *::after { 
+box-sizing: inherit; 
+} 
+html { 
+box-sizing: border-box; 
+}
 body {
     font-size: 14px;
     line-height: 16px;
     color: #000000;
     font-weight: normal;
     font-family: PTSans, Arial, sans-serif;
+    background-color: #f2f2f2;
 }
 h1 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
+}
+.clearfix::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+.main-container {
+    width: 1200px;
+    margin: 0 auto;
+}
+.nav-list {
+    width: 1200px;
+    min-height: 56px;
+    background-color: white;
+}
+li {
+    display: inline-block;
+}
+.logo {
+    position: absolute;
+}
+.banner{
+    background-image: url("../img/sedona-main-foto.jpg");
+    padding-top: 75px;
+    padding-bottom: 23px;
+    text-align: center;
+}
+.features-title {
+    height: 216px;
+    background-color: #ffffff;
+    overflow: auto;
+}
+.features-title-name {
+    display: block;
+    width: 440px;
+    margin-top: 61px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-title-description {
+    display: block;
+    width: 489px;
+    margin-top: 61px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.features-blue {
+    height: 256px;
+}
+.features-item1 {
+    float: left;
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+}
+.features-image1 {
+    float: right;
+    width: 800px;
+    height: 256px;
+}
+.features-item2 {
+    float: right;
+    width: 400px;
+    height: 256px;
+    background-color: #81b3d2;
+}
+.features-image2 {
+    float: left;
+    width: 800px;
+    height: 256px;
+}
+.features-attention {
+    height: 330px;
+}
+.features-attention-reasons {
+    width: 400px;
+    height: 330px;
+    background-color: #ffffff;
+    float: left;
+}
+.features-grey {
+    height: 256px;
+}
+.features-item3 {
+    width: 400px;
+    height: 256px;
+    background-color: #eeeeee;
+    float: left;
+}
+.features-white {
+    height: 291px;
+    background-color: #ffffff;
+}
+.map {
+    height: 593px;
+}
+.tag-visit-sedona {
+    float: left;
+    width: 400px;
+    height: 120px;
+    background-color: #fefcfc;
+}
+.footer-social {
+    float: left;
+    width: 400px;
+    height: 120px;
+    background-color: #fefcfc;
+}
+.footer-copyright {
+    float: left;
+    width: 400px;
+    height: 120px;
+    background-color: #fefcfc;
+}
+.popup {
+    width: 445px;
+    height: 310px;
+    margin: 0 auto;
+    background-color: #ffffff;
 }
