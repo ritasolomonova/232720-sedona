@@ -3,37 +3,35 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
       <div class="main-container">
         <header class="main-header">
-            <div class="container">
                 <nav class="main-navigation">
                     <div class="logo">
                         <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona!"></a>
                     </div>
-                    <ul>
-                        <li>
+                    <ul class="nav-list clearfix">
+                        <li class="left">
                             <a href="#">Информация</a>
                         </li>
-                        <li>
+                        <li class="left">
                             <a href="#">Фото и видео</a>
                         </li>
-                        <li>
+                        <li class="right">
                             <a href="#">Карта штата</a>
                         </li>
-                        <li>
+                        <li class="right">
                             <a href="#">Гостиницы</a>
                         </li>
                     </ul>
                 </nav>
-            </div>
         </header>
         <main class="container">
             <section class="conditions">
-                <img src="img/hotels-main-foto.jpg" width="1200" height="562" alt="Hotels in Sedona">
-                <form class="conditions-form" action="#" method="get">   
+                <form class="conditions-form clearfix" action="#" method="get">   
                     <div class="conditions-choose">
                         <b class="conditions-name">Инфраструктура:</b>
                         <input type="checkbox" name="pool" id="conditions-pool" checked>
@@ -74,30 +72,30 @@
                 </form>
             </section>
 
-            <section>
-                <div class="hotel-find">
+            <section class="hotels-find clearfix">
+                <div class="hotels-find-amount">
                     <b>Найдено:3</b>
                 </div>
-                <div>
-                    <b>Сортировка:</b>
-                    <ul class="hotel-sorting-list">
-                        <li>
+                <div class="hotels-sorting">
+                    <b class="hotels-sorting-name">Сортировка:</b>
+                    <ul class="hotels-sorting-list">
+                        <li class="sort-left">
                             <a href="#">По цене</a>
                         </li>
-                        <li>
+                        <li class="sort-left">
                             <a href="#">По типу</a>
                         </li>
-                        <li>
+                        <li class="sort-left">
                             <a href="#">По рейтингу</a>
                         </li>
                     </ul>
                 </div>
-                <div>
+                <div class="hotels-arrows">
                     <?--картинки со спрайта--?>    
                 </div>
             </section>
 
-            <article class="hotels">
+            <article class="hotels clearfix">
                 <div class="hotels-photo">
                     <a href="#"><img src="img/hotels-foto-1.jpg" width="135" height="90" alt="Amara resort & spa"></a>
                 </div>
@@ -115,7 +113,7 @@
                 </div>
             </article>
 
-            <article class="hotels">
+            <article class="hotels clearfix">
                 <div class="hotels-photo">
                     <a href="#"><img src="img/hotels-foto-2.jpg" width="135" height="90" alt="Desert quail inn"></a>
                 </div>
@@ -133,7 +131,7 @@
                 </div>
             </article>
 
-            <article class="hotels">
+            <article class="hotels clearfix">
                 <div class="hotels-photo">
                     <a href="#"><img src="img/hotels-foto-3.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
                 </div>
@@ -151,7 +149,7 @@
                 </div>
             </article>
         </main>       
-        <footer class="footer-container">
+        <footer class="footer-container clearfix">
                 <div class="footer-tag">
                     <a class="tag-visit-sedona" href="#">#visitsedona</a>
                 </div>
