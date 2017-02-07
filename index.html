@@ -11,20 +11,20 @@
         <header class="main-header">
                 <nav class="main-navigation">
                     <div class="logo">
-                        <a href="#"><img src="img/logo.png" width="138" height="70" alt="City of Sedona!"></a>
+                        <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona!"></a>
                     </div>
                     <ul class="nav-list clearfix">
                         <li class="left">
-                            <a href="#">Информация</a>
+                            <a class="active">Информация</a>
                         </li>
                         <li class="left">
                             <a href="#">Фото и видео</a>
                         </li>
                         <li class="right">
-                            <a href="#">Карта штата</a>
+                            <a href="hotels.html">Гостиницы</a>
                         </li>
                         <li class="right">
-                            <a href="hotels.html">Гостиницы</a>
+                            <a href="#">Карта штата</a>
                         </li>
                     </ul>
                 </nav>
@@ -32,6 +32,7 @@
         <main class="container">
             <section class="banner">
                 <div class="banner-welcome">
+                    <img src="img/welcome-to-sedona.png" width="458" height="352" alt="Добро пожаловать в Седону!"/>
                 </div>
                 <div class="banner-cut">
                 </div>
@@ -41,10 +42,10 @@
                 <p class="features-title-description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!</p>
             </section>
             <section class="features-blue clearfix">
-                <div class="features-item1">
+                <div class="features-item">
                    <span class="features-name">Настоящий городок</span>
                     <span>- №1 -</span>
-                    <p>Седона - не аттракцион для туристов, там течет своя жизнь</p> 
+                    <p class="features-description">Седона - не аттракцион для туристов, там течет своя жизнь</p> 
                 </div>
                 <div class="features-image1">
                     <img src="img/sedona-foto-1.jpg" width="800" height="256" alt="1. Настоящий городок!">
@@ -68,58 +69,63 @@
                 <div class="features-image2">
                     <img src="img/sedona-foto-2.jpg" width="800" height="256" alt="2. Там есть мост дьявола!">
                 </div>
-                <div class="features-item2">
+                <div class="features-item">
                     <span class="features-name">Там есть мост дьявола</span>
                     <span>- №2 -</span>
-                    <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+                    <p class="features-description">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
                 </div>
             </section>
             <section class="features-grey clearfix">
-                <div class="features-item3">
+                <div class="features-item">
                     <span class="features-name">Небольшая площадь</span>
                     <span>- №3 -</span>
-                    <p>Все достопримечательности находятся очень близко</p>
+                    <p class="features-description">Все достопримечательности находятся очень близко</p>
                 </div>
-                <div class="features-item3">
+                <div class="features-item">
                     <span class="features-name">Красивая дорога</span>
                     <span>- №4 -</span>
-                    <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+                    <p class="features-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                 </div>
-                <div class="features-item3">
+                <div class="features-item">
                     <span class="features-name">Мало туристов</span>
                     <span>- №5 -</span>
-                    <p>Большинство едет в Гранд Каньон и толпится там</p>
+                    <p class="features-description">Большинство едет в Гранд Каньон и толпится там</p>
                 </div>
             </section>
             <section class="features-white">
                 <b class="features-white-name">Заинтересовались?</b>
-                <a class="hotel-search" href="#">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</a>
-                <input class="hotel-search-submit" type="submit" value="Поиск гостиницы в седоне" id="hotel-search">
+                <p class="hotel-search">укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
+                <a class="hotel-search-submit" href="#">Поиск гостиницы в седоне</a>
                 <section class="popup">
                     <form class="popup-form" action="#" method="get">
                         <div class="hotel-date">
                             <label for="date-arrive">Дата заезда:</label>
-                            <input class="date-arrive" type="text" name="calendar" id="date-arrive" value="24 апреля 2016">
+                            <input class="suitable-date date-arrive" type="text" name="calendar" id="date-arrive" value="24 апреля 2016">
+                            <button class="button-calendar"></button>
                         </div>
                         <div class="hotel-date">
                             <label for="date-departure">Дата выезда:</label>
-                            <input class="date-departure" type="text" name="calendar" id="date-departure" value="4 июля 2016">
+                            <input class="suitable-date date-departure" type="text" name="calendar" id="date-departure" value="4 июля 2016">
+                            <button class="button-calendar"></button>
                         </div>
                         <div class="guest-amount guest-amount-adult">
                             <label for="amount-adult">Взрослые:</label>
-                            <input class="amount-adult" type="text" id="amount-adult" value="2"> 
+                            <input class="amount-adult" type="text" id="amount-adult" value="2">
+                            <button class="button-plus-minus button-plus"></button>
+                            <button class="button-plus-minus button-minus"></button>
                         </div>
                         <div class="guest-amount guest-amount-child">
                             <label for="amount-child">Дети:</label>
                             <input class="amount-child" type="text" id="amount-child" value="0">
+                            <button class="button-plus-minus button-plus"></button>
+                            <button class="button-plus-minus button-minus"></button>
                         </div>
-                            <input class="submit-find" type="submit" id="submit-find" value="Найти"> 
+                        <input class="submit-find" type="submit" id="submit-find" value="Найти"> 
 
                     </form>
                 </section>
             </section>
             <section class="map">
-                <img src="img/map.jpg" width="1200" height="593" alt="Седона, Аризона 86336, США">
             </section>
         </main>
         <footer class="footer-container clearfix">
