@@ -35,45 +35,67 @@
                     <div class="conditions-choose">
                         <b class="conditions-name">Инфраструктура:</b>
                         <div class="conditions-option">
-                            <input class="checked-option" type="checkbox" name="pool" id="conditions-pool" checked>
-                            <label for="conditions-pool">Бассейн</label>
+                            <label class="label-checkbox" for="conditions-pool">
+                                <input type="checkbox" name="pool" id="conditions-pool" checked>
+                                <span class="checkbox-indicator"></span>
+                                Бассейн
+                            </label>
                         </div>
                         <div class="conditions-option">
-                            <input class="unchecked-option" type="checkbox" name="parking" id="conditions-parking">
-                            <label for="conditions-parking">Парковка</label>
+                            <label class="label-checkbox" for="conditions-parking">
+                                <input type="checkbox" name="parking" id="conditions-parking">
+                                <span class="checkbox-indicator"></span>
+                                Парковка
+                            </label>
                         </div>
                         <div class="conditions-option">
-                            <input class="unchecked-option" type="checkbox" name="wi-fi" id="conditions-wifi">
-                            <label for="conditions-wifi">Wi-Fi</label>
+                            <label class="label-checkbox" for="conditions-wifi">
+                                <input type="checkbox" name="wi-fi" id="conditions-wifi">
+                                <span class="checkbox-indicator"></span>
+                                Wi-Fi
+                            </label>
                         </div>
                     </div>
 
                     <div class="conditions-choose">
                         <b class="conditions-name">Тип жилья:</b>
                         <div class="conditions-option">
-                            <input class="checked-option" type="checkbox" name="hotel" id="conditions-hotel" checked>
-                            <label for="conditions-hotel">Гостиница</label>
+                            <label class="label-checkbox" for="conditions-hotel">
+                                <input type="checkbox" name="hotel" id="conditions-hotel" checked>
+                                <span class="checkbox-indicator"></span>
+                                Гостиница
+                            </label>
                         </div>
                         <div class="conditions-option">
-                            <input class="checked-option" type="checkbox" name="motel" id="conditions-motel" checked>
-                            <label for="conditions-motel">Мотель</label>
+                            <label class="label-checkbox" for="conditions-motel">
+                                <input type="checkbox" name="motel" id="conditions-motel" checked>
+                                <span class="checkbox-indicator"></span>
+                                Мотель
+                            </label>
                         </div>
                         <div class="conditions-option">
-                            <input class="checked-option" type="checkbox" name="apartments" id="conditions-apartments" checked>
-                            <label for="conditions-apartments">Апартаменты</label> 
+                            <label class="label-checkbox" for="conditions-apartments">
+                                <input type="checkbox" name="apartments" id="conditions-apartments" checked>
+                                <span class="checkbox-indicator"></span>
+                                Апартаменты
+                            </label> 
                         </div>
                     </div>
 
                     <div class="price-choose">
-                        <b class="conditions-name">Стоимость в сутки(р):</b>
-
-                        <label for="price-from">От</label>
-                        <input type="text" name="from" id="price-from" value="0">
-
-                        <label for="price-till">До</label>
-                        <input type="text" name="till" id="price-till" value="3000">
-
-                        <input type="range">
+                        <b class="conditions-name">Стоимость в сутки (р):</b>
+                        <div class="price-controls">
+                            <label class="min-price">от <input type="text" name="min-price"  value="0"></label>
+                            <label class="max-price">до <input type="text" name="max-price"  value="3000"></label>
+                        </div>
+                        <div class="range-controls">
+                            <div class="scale">
+                                <div class="bar">
+                                </div>
+                            </div>
+                            <div class="range-toggle toggle-min"></div>
+                            <div class="range-toggle toggle-max"></div>
+                        </div>
 
                         <input type="submit" id="submit-show" value="Показать">  
                     </div>  
