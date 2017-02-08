@@ -552,31 +552,96 @@ li.right {
     color: #ffffff;
 }
 .price-controls {
+    position: relative;
+    width: 318px;
     height: 36px;
-    margin-top: 9px;
+    font-size: 0;
+    margin-top: 10px;
+    margin-left: 10px;
     border: 2px solid #ffffff;
     border-radius: 2px;
+}
+.price-controls::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2px;
+    height: 22px;
+    background: #ffffff;
+    transform: translate(-50%, -50%);
 }
 .price-controls label {
     display: inline-block;
     font-size: 14px;
-    line-height: 38px;
-    vertical-align: top;
+    line-height: 30px;
+    vertical-align: middle;
     cursor: pointer;
 }
 .price-controls .min-price,
 .price-controls .max-price {
-    width: 90px;
+    width: 145px;
     padding-left: 65px;
 }
+
 .price-controls input {
     width: 50px;
     margin: 0px;
+    padding: 0px;
     color: inherit;
     font: inherit;
-    background: #fff;
+    background: inherit;
     border: none;
     outline: none;
+}
+.range-controls {
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 32px;
+    padding-left: 10px;
+}
+.range-controls .scale {
+    height: 2px;
+    background-color: rgba(255, 255, 255, 0.3);
+}
+.range-controls .bar {
+    width: 80%;
+    height: 2px;
+    background-color: #ffffff;
+}
+.range-toggle {
+    position: absolute;
+    top: -9px;
+    width: 20px;
+    height: 20px;
+    background-color: #ababab;
+    border: 8px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+    cursor: pointer;
+}
+.range-toggle:hover {
+    background-color: #1c4f80;
+}
+.toggle-min {
+    left: 10px;
+}
+.toggle-max {
+    left: 80%;
+}
+.button-show {
+    display: block;
+    margin: 0 auto;
+    padding: 6px 30px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #ffffff;
+    text-transform: uppercase;
+    background: transparent;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+    outline: none;
+    cursor: pointer;
 }
 .hotels-find {
     min-height: 86px;
@@ -593,9 +658,13 @@ li.right {
     padding-top: 33px;
     float: left;
 }
-.hotels-sorting-name {
-    width: 115px;
+.hotels-sorting {
+    width: 855px;
     min-height: 87px;
+    float: left;
+}
+.hotels-sorting-name {
+    width: 164px;
     font-size: 12px;
     line-height: 18px;
     padding-top: 39px;
@@ -605,7 +674,6 @@ li.sort-left{
     display: block;
     float: left;
     width: 81px;
-    min-height: 87px;
     font-size: 12px;
     line-height: 18px;
     padding-top: 39px;
