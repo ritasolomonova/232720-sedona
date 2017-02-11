@@ -27,6 +27,7 @@ h1 {
 .main-container {
     width: 1200px;
     margin: 0 auto;
+    box-shadow: 0 0 5px 4px rgba(0, 0, 0, 0.1);
 }
 .main-navigation {
     position: relative;
@@ -42,7 +43,7 @@ ul {
 li.left,
 li.right{
     display: block;
-    width: 239px;
+    width: 238px;
     height: 56px;
     text-align: center;
     padding-top: 20px;
@@ -95,16 +96,18 @@ li.right {
     text-transform: uppercase;
     text-align: center;
     padding-top: 61px;
-    padding-bottom: 40px;
-    padding-left: 355px;
-    padding-right: 355px;
+    padding-bottom: 37px;
+    padding-left: 312px;
+    padding-right: 312px;
 }
 .features-title-name {
     font-size: 21px;
+    line-height: 26px;
 }
 .features-title-description {
     font-size: 14px;
-    margin-top: 35px;
+    line-height: 26px;
+    margin-top: 27px;
 }
 .features-blue { 
     min-height: 256px;
@@ -124,8 +127,8 @@ li.right {
     display: block;
     font-size: 14px;
     line-height: 21px;
-    padding-top: 30px;
-    padding-bottom: 26px;
+    padding-top: 25px;
+    padding-bottom: 20px;
     padding-left: 125px;
     padding-right: 124px;
 }
@@ -133,11 +136,11 @@ li.right {
     font-size: 21px;
     line-height: 21px;
     font-weight: bold;
-    padding-top: 58px;
+    padding-top: 55px;
     padding-bottom: 0px;
 }
 .features-grey .features-name {
-    padding-top: 50px;
+    padding-top: 48px;
 }
 .features-item p {
     display: block;
@@ -179,8 +182,8 @@ li.right {
     line-height: 21px;
     font-weight: bold;
     padding-top: 108px;
-    margin-top: 56px;
-    margin-bottom: 30px;
+    margin-top: 54px;
+    margin-bottom: 23px;
 }
 .features-attention-name::before {
     content: "";
@@ -215,7 +218,7 @@ li.right {
 .features-attention-reasons p {
     font-size: 14px;
     line-height: 21px;
-    padding-left: 58px;
+    padding-left: 57px;
     padding-right: 55px;
 }
 .features-white {
@@ -229,21 +232,22 @@ li.right {
     font-size: 30px;
     line-height: 24px;
     font-weight: bold;
-    padding-top: 58px;
+    padding-top: 57px;
     margin-bottom: 32px;
 }
 .hotel-search {
     display: block;
     font-size: 14px;
+    line-height: 24px;
     padding-left: 380px;
     padding-right: 380px;
-    margin-bottom: 59px;
+    margin-bottom: 46px;
     text-decoration: none;
 }
 .hotel-search-submit {
     display: block;
     margin-left: 316px;
-    padding-top: 33px;
+    padding-top: 30px;
     width: 568px;
     height: 86px;
     background-color: #766357;
@@ -263,7 +267,7 @@ li.right {
     padding: 55px;
     background-color: #ffffff;
     z-index: 10;
-    box-shadow: 0 5px 5px 4px #dfdfdf;
+    box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 .popup-form {
     width: 458px;
@@ -272,7 +276,7 @@ li.right {
 .popup-form label {
     min-height: 38px;
     margin-bottom: 30px;
-    padding-top: 14px;
+    padding-top: 10px;
     font-size: 14px;
     font-weight: bold;
     float: left;
@@ -416,7 +420,7 @@ li.right {
 }
 .tag-visit-sedona {
     display: block;
-    margin-top: 50px;
+    margin-top: 48px;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -430,7 +434,7 @@ li.right {
 .social {
     display: inline-block;
     margin-top: 36px;
-    margin-right: 6px;
+    margin-right: 3px;
     width: 46px;
     height: 48px;
     text-indent: -9999px;
@@ -477,7 +481,7 @@ li.right {
 }
 .footer-copyright p {
     position: absolute;
-    top: 30px;
+    top: 32px;
     left: 102px;
     font-size: 14px;
     line-height: 26px;    
@@ -643,6 +647,10 @@ li.right {
     outline: none;
     cursor: pointer;
 }
+.button-show:hover {
+    background: #ffffff;
+    color: #000000;
+}
 .hotels-find {
     min-height: 86px;
     background-color: #ffffff;
@@ -664,7 +672,7 @@ li.right {
     float: left;
 }
 .hotels-sorting-name {
-    width: 164px;
+    width: 116px;
     font-size: 12px;
     line-height: 18px;
     padding-top: 39px;
@@ -702,7 +710,7 @@ li.sort-left{
     width: 35px;
     height: 10px;
     font-size: 0px;
-    margin-top: 42px;
+    margin-top: 40px;
     float: right;
 }
 .arrows-up-down {
@@ -743,8 +751,8 @@ li.sort-left{
     border-bottom: 1px solid #e5e5e5;
     padding-left: 73px;
     padding-right: 73px;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 29px;
+    padding-bottom: 24px;
 }
 .hotels-photo {
     width: 135px;
@@ -760,11 +768,11 @@ li.sort-left{
 }
 .hotels-name {
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 7px;
     text-decoration: none;
     color: #000000;
     font-size: 21px;
-    line-height: 26px;;
+    line-height: 26px;
     
 }
 .hotels-name:hover {
@@ -776,11 +784,15 @@ li.sort-left{
 .hotel-type {
     display: inline-block;
     float: left;
+    font-size: 14px;
+    line-height: 26px;
     width: 115px;
 }
 .hotel-price {
     display: inline-block;
     float: left;
+    font-size: 14px;
+    line-height: 26px;
     margin-bottom: 10px;
     width: 115px;
 }
@@ -851,7 +863,7 @@ li.sort-left{
 .rating::before {
     content: "";
     position: absolute;
-    top: 0px;
+    top: 5px;
     right: 0;
     display: block;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
