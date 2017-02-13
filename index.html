@@ -96,16 +96,18 @@
                 <b class="features-white-name">Заинтересовались?</b>
                 <p class="hotel-search">укажите предполагаемые даты поездки, и&nbsp;мы&nbsp;покажем&nbsp;вам&nbsp;лучшие предложения гостиниц в седоне</p>
                 <a class="hotel-search-submit" href="#">Поиск гостиницы в седоне</a>
+            </section>
+            <section class="map">
                 <section class="popup">
                     <form class="popup-form" action="#" method="get">
                         <div class="hotel-date">
                             <label for="date-arrive">Дата заезда:</label>
-                            <input class="suitable-date date-arrive" type="text" name="calendar" id="date-arrive" value="24 апреля 2016">
+                            <input class="suitable-date date-arrive" type="text" name="calendar" id="date-arrive" value="24 апреля 2017">
                             <button class="button-calendar"></button>
                         </div>
                         <div class="hotel-date">
                             <label for="date-departure">Дата выезда:</label>
-                            <input class="suitable-date date-departure" type="text" name="calendar" id="date-departure" value="4 июля 2016">
+                            <input class="suitable-date date-departure" type="text" name="calendar" id="date-departure" value="4 июля 2017">
                             <button class="button-calendar"></button>
                         </div>
                         <div class="guest-amount guest-amount-adult">
@@ -125,8 +127,6 @@
                     </form>
                 </section>
             </section>
-            <section class="map">
-            </section>
         </main>
         <footer class="footer-up footer-container clearfix">
                 <div class="footer-tag">
@@ -143,5 +143,18 @@
                 </div>  
         </footer>
     </div>
+      
+    <script>
+        var link = document.querySelector(".hotel-search-submit");
+        var popup = document.querySelector(".popup");
+        var login = popup.querySelector(".date-arrive");
+        
+        link.addEventListener("click", function(event) {
+            event.preventDefault();
+            popup.classList.toggle("popup-show");
+            login.focus();
+        });
+    </script>  
+      
     </body>
 </html>

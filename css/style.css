@@ -43,11 +43,13 @@ ul {
 li.left,
 li.right{
     display: block;
-    width: 238px;
-    height: 56px;
+    width: 240px;
+    min-height: 56px;
     text-align: center;
-    padding-top: 20px;
+    padding-top: 15px;
+    padding-bottom: 1px;
     font-size: 14px;
+    line-height: 26px;
     font-weight: bold;
 }
 li.left {
@@ -222,7 +224,6 @@ li.right {
     padding-right: 55px;
 }
 .features-white {
-    position: relative;
     min-height: 291px;
     background-color: #ffffff;
     text-align: center;
@@ -249,19 +250,19 @@ li.right {
     margin-left: 316px;
     padding-top: 30px;
     width: 568px;
-    height: 86px;
+    min-height: 86px;
     background-color: #766357;
     color: #ffffff;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-decoration: none;
-    
+    text-decoration: none;   
 }
 .popup {
+    display: none;
     position: absolute;
     left: 316px;
-    top: 291px;
+    top: 0px;
     width: 568px;
     min-height: 395px;
     padding: 55px;
@@ -269,20 +270,27 @@ li.right {
     z-index: 10;
     box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
+.popup-show {
+    display: block;
+}
 .popup-form {
     width: 458px;
     height: 285px;
 }
 .popup-form label {
+    display: inline-block;
+    width: 111px;
     min-height: 38px;
-    margin-bottom: 30px;
     padding-top: 10px;
     font-size: 14px;
     font-weight: bold;
-    float: left;
+}
+.guest-amount-child label {
+    width: 63px;
 }
 .popup-form input {
-    border: none; 
+    border: none;
+    float: right;
 }
 .hotel-date {
     position: relative;
@@ -290,6 +298,7 @@ li.right {
     min-height: 38px;
 }
 .suitable-date {
+    display: inline-block;
     width: 347px;
     height: 38px;
     padding-left: 13px;
@@ -299,7 +308,6 @@ li.right {
     font-weight: bold;
     text-transform: uppercase;
     font-family: PT Sans, Arial, sans-serif;
-    float: right;
 }
 .suitable-date:hover {
     background-color: #ebebeb;
@@ -384,13 +392,14 @@ li.right {
 }
 .submit-find {
     width: 458px;
-    height: 58px;
+    min-height: 58px;
     background-color: #81b3d2;
     color: #ffffff;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     text-transform: uppercase;
+    font-family: PT Sans, Arial, sans-serif;
 }
 .submit-find:hover {
     background-color: #669ec0;
@@ -474,23 +483,25 @@ li.right {
     background-position: -2820px 15px;
 }
 .footer-copyright {
-    position: relative;
     float: left;
     width: 400px;
     opacity: 0.9;
+    padding-left: 102px;
+    padding-right: 103px;
 }
 .footer-copyright p {
-    position: absolute;
-    top: 32px;
-    left: 102px;
+    display: inline-block;
+    float: left;
+    width: 80px;
+    margin-top: 47px;
     font-size: 14px;
-    line-height: 26px;    
+    line-height: 26px;   
 }
 .coryright-htmlacademy {
-    position: absolute;
-    top: 41px;
-    right: 103px;
-    display: block;
+    display: inline-block;
+    float: right;
+    margin-top: 41px;
+    display: inline-block;
     text-indent: -9999px;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
     background-position: -1380px 0px;
@@ -527,7 +538,7 @@ li.right {
     font-size: 14px;
     line-height: 21px;
     color: #ffffff;
-    margin-top: 26px;
+    margin-top: 25px;
 }
 .conditions-choose input[type="checkbox"] {
     display: none;
@@ -550,14 +561,14 @@ li.right {
     background-position: -2160px 0px;
 }
 .price-choose {
-    width: 328px;
+    width: 325px;
     margin-right: 73px;
     float: right;
     color: #ffffff;
 }
 .price-controls {
     position: relative;
-    width: 318px;
+    width: 315px;
     height: 36px;
     font-size: 0;
     margin-top: 10px;
@@ -636,9 +647,11 @@ li.right {
 .button-show {
     display: block;
     margin: 0 auto;
+    width: 134px;
     padding: 6px 30px;
     font-size: 14px;
     line-height: 20px;
+    font-family: PT Sans, Arial, sans-serif;
     color: #ffffff;
     text-transform: uppercase;
     background: transparent;
@@ -786,6 +799,7 @@ li.sort-left{
     float: left;
     font-size: 14px;
     line-height: 26px;
+    margin-bottom: 40px;
     width: 115px;
 }
 .hotel-price {
@@ -793,7 +807,7 @@ li.sort-left{
     float: left;
     font-size: 14px;
     line-height: 26px;
-    margin-bottom: 10px;
+    margin-bottom: 40px;
     width: 115px;
 }
 .hotels-button {
