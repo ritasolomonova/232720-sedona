@@ -1,8 +1,10 @@
-*, *::before, *::after { 
-    box-sizing: inherit; 
-} 
-html { 
-    box-sizing: border-box; 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+html {
+    box-sizing: border-box;
 }
 body {
     text-transform: uppercase;
@@ -12,14 +14,14 @@ body {
     font-family: PT Sans, Arial, sans-serif;
     background-color: #f2f2f2;
 }
-h1 {
+.hotels-description h1 {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
     margin-top: 0px;
     margin-bottom: 0px;
 }
-.clearfix::after{
+.clearfix::after {
     content: "";
     display: table;
     clear: both;
@@ -36,12 +38,13 @@ h1 {
     min-height: 56px;
     background-color: #ffffff;
 }
-ul {
+.hotels-sorting ul,
+.main-navigation ul {
     margin: 0px;
     padding: 0px;
 }
 li.left,
-li.right{
+li.right {
     display: block;
     width: 240px;
     min-height: 56px;
@@ -66,7 +69,7 @@ li.right {
     color: #81b3d2;
 }
 .nav-list a:active {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 .nav-list a.active {
     color: #766357;
@@ -75,7 +78,8 @@ li.right {
     position: absolute;
     left: 532px;
 }
-.banner{
+.banner {
+    background-color: #ddeaf3;
     background-image: url("../img/sedona-main-foto.jpg");
     background-position: 0px -56px;
     background-repeat: no-repeat;
@@ -90,7 +94,7 @@ li.right {
     background-image: url("../img/sedona-main-foto-overlay.png");
     background-repeat: no-repeat;
     margin-top: 20px;
-    min-height: 57px; 
+    min-height: 57px;
 }
 .features-title {
     min-height: 105px;
@@ -111,7 +115,7 @@ li.right {
     line-height: 26px;
     margin-top: 27px;
 }
-.features-blue { 
+.features-blue {
     min-height: 256px;
     background-color: #81b3d2;
     color: #ffffff;
@@ -199,7 +203,8 @@ li.right {
     width: 75px;
     height: 72px;
     margin-left: -37.5px;
-    background-position: -959px 0px;;
+    background-position: -959px 0px;
+    ;
 }
 .name2::before {
     top: 6px;
@@ -256,10 +261,9 @@ li.right {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-decoration: none;   
+    text-decoration: none;
 }
 .popup {
-    display: none;
     position: absolute;
     left: 316px;
     top: 0px;
@@ -271,7 +275,7 @@ li.right {
     box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
 }
 .popup-show {
-    display: block;
+    display: none;
 }
 .popup-form {
     width: 458px;
@@ -279,6 +283,7 @@ li.right {
 }
 .popup-form label {
     display: inline-block;
+    vertical-align: top;
     width: 111px;
     min-height: 38px;
     padding-top: 10px;
@@ -299,6 +304,7 @@ li.right {
 }
 .suitable-date {
     display: inline-block;
+    vertical-align: top;
     width: 347px;
     height: 38px;
     padding-left: 13px;
@@ -325,7 +331,7 @@ li.right {
     width: 38px;
     height: 38px;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
-    background-position: -521.5px 8px;   
+    background-position: -521.5px 8px;
 }
 .button-calendar:hover {
     background-position: -460.5px 8px;
@@ -336,7 +342,8 @@ li.right {
 .guest-amount {
     position: relative;
     display: inline-block;
-    height: 38px;
+    vertical-align: top;
+    min-height: 38px;
     margin-bottom: 54px;
 }
 .guest-amount-adult {
@@ -348,7 +355,7 @@ li.right {
     width: 179px;
 }
 .amount-adult,
-.amount-child{
+.amount-child {
     width: 116px;
     height: 38px;
     padding-left: 38px;
@@ -371,24 +378,24 @@ li.right {
 .button-minus {
     top: 0px;
     right: 76px;
-    background-position: -1624px 17.5px;   
+    background-position: -1624px 17.5px;
 }
 .button-minus:hover {
-    background-position: -1572px 17.5px;   
+    background-position: -1572px 17.5px;
 }
 .button-minus:active {
-    background-position: -1520px 17.5px;   
+    background-position: -1520px 17.5px;
 }
 .button-plus {
     top: 0px;
     right: 0px;
-    background-position: -1963.5px 13.5px;   
+    background-position: -1963.5px 13.5px;
 }
 .button-plus:hover {
-    background-position: -1912.5px 13.5px;   
+    background-position: -1912.5px 13.5px;
 }
 .button-plus:active {
-    background-position: -1861.5px 13.5px;   
+    background-position: -1861.5px 13.5px;
 }
 .submit-find {
     width: 458px;
@@ -406,11 +413,11 @@ li.right {
 }
 .submit-find:active {
     background-color: #5496bd;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .map {
     position: relative;
-    background: url("../img/map.jpg") no-repeat;
+    background: #cbdda9 url("../img/map.jpg") no-repeat;
     width: 1200px;
     min-height: 593px;
 }
@@ -442,6 +449,7 @@ li.right {
 }
 .social {
     display: inline-block;
+    vertical-align: top;
     margin-top: 36px;
     margin-right: 3px;
     width: 46px;
@@ -491,21 +499,23 @@ li.right {
 }
 .footer-copyright p {
     display: inline-block;
+    vertical-align: top;
     float: left;
     width: 80px;
     margin-top: 47px;
     font-size: 14px;
-    line-height: 26px;   
+    line-height: 26px;
 }
 .coryright-htmlacademy {
     display: inline-block;
+    vertical-align: top;
     float: right;
     margin-top: 41px;
-    display: inline-block;
     text-indent: -9999px;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
     background-position: -1380px 0px;
-    width: 113px; height: 39px;
+    width: 113px;
+    height: 39px;
 }
 .coryright-htmlacademy:hover {
     background-position: -1227px 0px;
@@ -516,6 +526,7 @@ li.right {
 /* СТИЛИ ДЛЯ СТРАНИЦЫ ОТЕЛЕЙ */
 
 .conditions {
+    background-color: #293c43;
     background-image: url("../img/hotels-main-foto.jpg");
     background-position: 0px -56px;
     background-repeat: no-repeat;
@@ -557,8 +568,14 @@ li.right {
     background: transparent url("../img/sprite-sheet.png") no-repeat;
     background-position: -1813px 0px;
 }
+.label-checkbox input[type="checkbox"]:disabled +.checkbox-indicator {
+    background-position: -1689px 0px;
+}
 .label-checkbox input[type="checkbox"]:checked +.checkbox-indicator {
     background-position: -2160px 0px;
+}
+.label-checkbox input[type="checkbox"]:checked:disabled +.checkbox-indicator {
+    background-position: -2028px 0px;
 }
 .price-choose {
     width: 325px;
@@ -588,6 +605,7 @@ li.right {
 }
 .price-controls label {
     display: inline-block;
+    vertical-align: top;
     font-size: 14px;
     line-height: 30px;
     vertical-align: middle;
@@ -598,14 +616,13 @@ li.right {
     width: 145px;
     padding-left: 65px;
 }
-
 .price-controls input {
     width: 50px;
     margin: 0px;
-    padding: 0px;
     color: inherit;
     font: inherit;
-    background: inherit;
+    line-height: 21px;
+    background-color: transparent;
     border: none;
     outline: none;
 }
@@ -691,7 +708,7 @@ li.right {
     padding-top: 39px;
     float: left;
 }
-li.sort-left{
+li.sort-left {
     display: block;
     float: left;
     width: 81px;
@@ -700,7 +717,7 @@ li.sort-left{
     padding-top: 39px;
 }
 .sort-left a {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
     text-decoration: none;
     border-bottom: 1px dotted #81b3d2;
 }
@@ -786,16 +803,16 @@ li.sort-left{
     color: #000000;
     font-size: 21px;
     line-height: 26px;
-    
 }
 .hotels-name:hover {
     color: #81b3d2;
 }
 .hotels-name:active {
-    color: rgba(0,0,0,0.3);
+    color: rgba(0, 0, 0, 0.3);
 }
 .hotel-type {
     display: inline-block;
+    vertical-align: top;
     float: left;
     font-size: 14px;
     line-height: 26px;
@@ -804,6 +821,7 @@ li.sort-left{
 }
 .hotel-price {
     display: inline-block;
+    vertical-align: top;
     float: left;
     font-size: 14px;
     line-height: 26px;
@@ -833,7 +851,7 @@ li.sort-left{
 }
 .hotels-details:active {
     background-color: #5496bd;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .hotels-booking {
     bottom: 5px;
@@ -848,11 +866,11 @@ li.sort-left{
 }
 .hotels-booking:active {
     background-color: #503e33;
-    color: rgba(255,255,255,0.3);
+    color: rgba(255, 255, 255, 0.3);
 }
 .rating1,
 .rating2,
-.rating3{
+.rating3 {
     position: relative;
     width: 110px;
     min-height: 100px;
@@ -883,17 +901,17 @@ li.sort-left{
     background: transparent url("../img/sprite-sheet.png") no-repeat;
 }
 .rating1::before {
-    width: 89px; 
+    width: 89px;
     height: 17px;
     background-position: -2413px 0px;
 }
 .rating2::before {
-    width: 65px; 
+    width: 65px;
     height: 17px;
-    background-position: -2308px 0px; 
+    background-position: -2308px 0px;
 }
 .rating3::before {
-    width: 42px; 
+    width: 42px;
     height: 17px;
-    background-position: -2226px 0px; 
+    background-position: -2226px 0px;
 }

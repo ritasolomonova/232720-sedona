@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-  </head>
-  <body>
-      <div class="main-container">
+</head>
+
+<body>
+    <div class="main-container">
         <header class="main-header">
-                <nav class="main-navigation">
-                    <div class="logo">
-                        <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona!"></a>
-                    </div>
-                    <ul class="nav-list clearfix">
-                        <li class="left">
-                            <a href="#">Информация</a>
-                        </li>
-                        <li class="left">
-                            <a href="#">Фото и видео</a>
-                        </li>
-                        <li class="right">
-                            <a class="active">Гостиницы</a>
-                        </li>
-                        <li class="right">
-                            <a href="#">Карта штата</a>
-                        </li>
-                    </ul>
-                </nav>
+            <nav class="main-navigation">
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" width="138" height="70" alt="City of Sedona!">
+                    </a>
+                </div>
+                <ul class="nav-list clearfix">
+                    <li class="left">
+                        <a href="#">Информация</a>
+                    </li>
+                    <li class="left">
+                        <a href="#">Фото и видео</a>
+                    </li>
+                    <li class="right">
+                        <a class="active">Гостиницы</a>
+                    </li>
+                    <li class="right">
+                        <a href="#">Карта штата</a>
+                    </li>
+                </ul>
+            </nav>
         </header>
         <main class="container">
             <section class="conditions">
-                <form class="conditions-form clearfix" action="#" method="get">   
+                <form class="conditions-form clearfix" action="https://echo.htmlacademy.ru/" method="get">
                     <div class="conditions-choose">
                         <b class="conditions-name">Инфраструктура:</b>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-pool">
                                 <input type="checkbox" name="pool" id="conditions-pool" checked>
-                                <span class="checkbox-indicator"></span>
-                                Бассейн
+                                <span class="checkbox-indicator"></span> Бассейн
                             </label>
                         </div>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-parking">
                                 <input type="checkbox" name="parking" id="conditions-parking">
-                                <span class="checkbox-indicator"></span>
-                                Парковка
+                                <span class="checkbox-indicator"></span> Парковка
                             </label>
                         </div>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-wifi">
-                                <input type="checkbox" name="wi-fi" id="conditions-wifi">
-                                <span class="checkbox-indicator"></span>
-                                Wi-Fi
+                                <input type="checkbox" name="wi-fi" id="conditions-wifi" disabled>
+                                <span class="checkbox-indicator"></span> Wi-Fi
                             </label>
                         </div>
                     </div>
@@ -61,32 +62,33 @@
                         <b class="conditions-name">Тип жилья:</b>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-hotel">
-                                <input type="checkbox" name="hotel" id="conditions-hotel" checked>
-                                <span class="checkbox-indicator"></span>
-                                Гостиница
+                                <input type="checkbox" name="hotel" id="conditions-hotel" checked disabled>
+                                <span class="checkbox-indicator"></span> Гостиница
                             </label>
                         </div>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-motel">
                                 <input type="checkbox" name="motel" id="conditions-motel" checked>
-                                <span class="checkbox-indicator"></span>
-                                Мотель
+                                <span class="checkbox-indicator"></span> Мотель
                             </label>
                         </div>
                         <div class="conditions-option">
                             <label class="label-checkbox" for="conditions-apartments">
                                 <input type="checkbox" name="apartments" id="conditions-apartments" checked>
-                                <span class="checkbox-indicator"></span>
-                                Апартаменты
-                            </label> 
+                                <span class="checkbox-indicator"></span> Апартаменты
+                            </label>
                         </div>
                     </div>
 
                     <div class="price-choose">
                         <b class="conditions-name">Стоимость в сутки (р):</b>
                         <div class="price-controls">
-                            <label class="min-price">от <input type="text" name="min-price"  value="0"></label>
-                            <label class="max-price">до <input type="text" name="max-price"  value="3000"></label>
+                            <label class="min-price">от
+                                <input type="text" name="min-price" value="0">
+                            </label>
+                            <label class="max-price">до
+                                <input type="text" name="max-price" value="3000">
+                            </label>
                         </div>
                         <div class="range-controls">
                             <div class="scale">
@@ -97,8 +99,8 @@
                             <div class="range-toggle toggle-max"></div>
                         </div>
 
-                        <input class="button-show" type="submit" id="submit-show" value="Показать">  
-                    </div>  
+                        <input class="button-show" type="submit" id="submit-show" value="Показать">
+                    </div>
                 </form>
             </section>
 
@@ -128,7 +130,8 @@
 
             <article class="hotels clearfix">
                 <div class="hotels-photo">
-                    <a href="#"><img src="img/hotels-foto-1.jpg" width="135" height="90" alt="Amara resort & spa"></a>
+                    <a href="#"><img src="img/hotels-foto-1.jpg" width="135" height="90" alt="Amara resort & spa">
+                    </a>
                 </div>
 
                 <div class="hotels-description">
@@ -136,17 +139,18 @@
                     <span class="hotel-type">Гостиница</span>
                     <span class="hotel-price">от 4000 р.</span>
                     <a class="hotels-button hotels-details" href="#">Подробнее</a>
-                    <a class="hotels-button hotels-booking" href="#">Забронировать</a> 
+                    <a class="hotels-button hotels-booking" href="#">Забронировать</a>
                 </div>
 
                 <div class="rating rating1">
-                   <span class="rating-name">Рейтинг: 8,5</span>
+                    <span class="rating-name">Рейтинг: 8,5</span>
                 </div>
             </article>
 
             <article class="hotels clearfix">
                 <div class="hotels-photo">
-                    <a href="#"><img src="img/hotels-foto-2.jpg" width="135" height="90" alt="Desert quail inn"></a>
+                    <a href="#"><img src="img/hotels-foto-2.jpg" width="135" height="90" alt="Desert quail inn">
+                    </a>
                 </div>
 
                 <div class="hotels-description">
@@ -154,17 +158,18 @@
                     <span class="hotel-type">Мотель</span>
                     <span class="hotel-price">от 3000 р.</span>
                     <a class="hotels-button hotels-details" href="#">Подробнее</a>
-                    <a class="hotels-button hotels-booking" href="#">Забронировать</a> 
+                    <a class="hotels-button hotels-booking" href="#">Забронировать</a>
                 </div>
 
                 <div class="rating rating2">
-                   <span class="rating-name">Рейтинг: 8,9</span>
+                    <span class="rating-name">Рейтинг: 8,9</span>
                 </div>
             </article>
 
             <article class="hotels clearfix">
                 <div class="hotels-photo">
-                    <a href="#"><img src="img/hotels-foto-3.jpg" width="135" height="90" alt="Villas at poco diablo"></a>
+                    <a href="#"><img src="img/hotels-foto-3.jpg" width="135" height="90" alt="Villas at poco diablo">
+                    </a>
                 </div>
 
                 <div class="hotels-description">
@@ -176,24 +181,25 @@
                 </div>
 
                 <div class="rating rating3">
-                   <span class="rating-name">Рейтинг: 9,2</span>
+                    <span class="rating-name">Рейтинг: 9,2</span>
                 </div>
             </article>
-        </main>       
+        </main>
         <footer class="footer-container clearfix">
-                <div class="footer-tag">
-                    <a class="tag-visit-sedona" href="#">#visitsedona</a>
-                </div>
-                <div class="footer-social">
-                    <a class="social social-tw" href="#">Твиттер</a>
-                    <a class="social social-fb" href="#">Фейсбук</a>
-                    <a class="social social-yt" href="#">Ютуб</a>
-                </div>
-                <div class="footer-copyright">
-                    <p>Website by</p>
-                    <a class="coryright-htmlacademy" href="#">HTML Academy</a>
-                </div>  
+            <div class="footer-tag">
+                <a class="tag-visit-sedona" href="#">#visitsedona</a>
+            </div>
+            <div class="footer-social">
+                <a class="social social-tw" href="#">Твиттер</a>
+                <a class="social social-fb" href="#">Фейсбук</a>
+                <a class="social social-yt" href="#">Ютуб</a>
+            </div>
+            <div class="footer-copyright">
+                <p>Website by</p>
+                <a class="coryright-htmlacademy" href="#">HTML Academy</a>
+            </div>
         </footer>
     </div>
 </body>
+
 </html>
