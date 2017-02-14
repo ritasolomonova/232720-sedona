@@ -204,7 +204,6 @@ li.right {
     height: 72px;
     margin-left: -37.5px;
     background-position: -959px 0px;
-    ;
 }
 .name2::before {
     top: 6px;
@@ -263,6 +262,23 @@ li.right {
     font-weight: bold;
     text-decoration: none;
 }
+@keyframes move {
+    0%   {
+        transform: translateY(75px);
+    }
+    25%  {
+        transform: translateY(50px);
+    }
+    50%  {
+        transform: translateY(25px);
+    }
+    75%  {
+        transform: translateY(10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
 .popup {
     position: absolute;
     left: 316px;
@@ -273,8 +289,9 @@ li.right {
     background-color: #ffffff;
     z-index: 10;
     box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+    animation: move 0.5s;
 }
-.popup-show {
+.popup-hide {
     display: none;
 }
 .popup-form {
@@ -419,7 +436,7 @@ li.right {
     position: relative;
     background: #cbdda9 url("../img/map.jpg") no-repeat;
     width: 1200px;
-    min-height: 593px;
+    height: 593px;
 }
 .footer-up {
     position: relative;
@@ -454,7 +471,7 @@ li.right {
     margin-right: 3px;
     width: 46px;
     height: 48px;
-    text-indent: -9999px;
+    font-size: 0;
     background: #81b3d2 url("../img/sprite-sheet.png") no-repeat;
 }
 .social-tw {
@@ -511,7 +528,7 @@ li.right {
     vertical-align: top;
     float: right;
     margin-top: 41px;
-    text-indent: -9999px;
+    font-size: 0;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
     background-position: -1380px 0px;
     width: 113px;
