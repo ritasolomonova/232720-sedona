@@ -6,7 +6,7 @@ var departure = popup.querySelector(".date-departure");
 var adult = popup.querySelector(".amount-adult");
 var child = popup.querySelector(".amount-child");
 var adultstorage = localStorage.getItem("adult");
-var childstorage = localStorage.getItem("adult");
+var childstorage = localStorage.getItem("child");
 
 popup.classList.add("popup-hide");
 
