@@ -570,8 +570,8 @@ body {
     min-height: 217px;
 }
 .conditions-choose {
-    width: 182px;
-    margin-left: 73px;
+    width: 183px;
+    margin-left: 72px;
     float: left;
 }
 .conditions-name {
@@ -579,7 +579,7 @@ body {
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
-    margin-top: 28px;
+    margin-top: 27px;
 }
 .conditions-option {
     position: relative;
@@ -593,13 +593,13 @@ body {
 }
 .label-checkbox {
     position: relative;
-    padding-left: 39px;
+    padding-left: 40px;
     cursor: pointer;
 }
 .label-checkbox input[type="checkbox"]+.checkbox-indicator {
     position: absolute;
-    top: -4px;
-    left: 0px;
+    top: -3px;
+    left: -1px;
     width: 26px;
     height: 22px;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
@@ -615,14 +615,14 @@ body {
     background-position: -2028px 0px;
 }
 .price-choose {
-    width: 325px;
-    margin-right: 73px;
+    width: 328px;
+    margin-right: 72px;
     float: right;
     color: #ffffff;
 }
 .price-controls {
     position: relative;
-    width: 315px;
+    width: 318px;
     height: 36px;
     font-size: 0;
     margin-top: 10px;
@@ -702,7 +702,7 @@ body {
 .button-show {
     display: block;
     margin: 0 auto;
-    width: 134px;
+    width: 137px;
     padding: 6px 30px;
     font-size: 14px;
     line-height: 20px;
@@ -723,27 +723,27 @@ body {
     min-height: 86px;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
-    padding-left: 73px;
-    padding-right: 73px;
+    padding-left: 72px;
+    padding-right: 72px;
 }
 .hotels-find-amount {
     width: 164px;
-    min-height: 87px;
+    min-height: 86px;
     font-size: 21px;
     line-height: 26px;
-    padding-top: 33px;
+    padding-top: 30px;
     float: left;
 }
 .hotels-sorting {
     width: 855px;
-    min-height: 87px;
+    min-height: 86px;
     float: left;
 }
 .hotels-sorting-name {
     width: 116px;
     font-size: 12px;
     line-height: 18px;
-    padding-top: 39px;
+    padding-top: 36px;
     float: left;
 }
 li.sort-left {
@@ -752,7 +752,7 @@ li.sort-left {
     width: 81px;
     font-size: 12px;
     line-height: 18px;
-    padding-top: 39px;
+    padding-top: 36px;
 }
 .sort-left a {
     color: rgba(0, 0, 0, 0.3);
@@ -819,9 +819,9 @@ li.sort-left {
     min-height: 151px;
     background-color: #ffffff;
     border-bottom: 1px solid #e5e5e5;
-    padding-left: 73px;
-    padding-right: 73px;
-    padding-top: 29px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 30px;
     padding-bottom: 24px;
 }
 .hotels-photo {
@@ -838,7 +838,7 @@ li.sort-left {
 }
 .hotels-name {
     display: block;
-    margin-bottom: 7px;
+    margin-bottom: 4px;
     text-decoration: none;
     color: #000000;
     font-size: 21px;
@@ -929,8 +929,8 @@ li.sort-left {
     text-decoration: none;
     font-size: 14px;
     line-height: 21px;
-    padding-left: 16px;
-    padding-top: 5px;
+    padding-left: 15px;
+    padding-top: 3px;
 }
 .rating::before {
     content: "";
