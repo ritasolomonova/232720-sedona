@@ -51,7 +51,7 @@ body {
     width: 240px;
     min-height: 56px;
     text-align: center;
-    padding-top: 15px;
+    padding-top: 14px;
     font-size: 14px;
     line-height: 26px;
     font-weight: bold;
@@ -83,8 +83,10 @@ body {
 .logo {
     position: absolute;
     left: 531px;
+    z-index: 1;
 }
 .banner {
+    position: relative;
     background-color: #ddeaf3;
     background-image: url("../img/sedona-main-foto.jpg");
     background-position: 0px -56px;
@@ -96,11 +98,15 @@ body {
     padding-left: 371px;
     padding-right: 371px;
 }
-.banner-cut {
+.banner::after {
+    content: "";
+    position: absolute;
+    top: 451px;
+    left: 0px;
+    width: 1200px;
+    height: 57px;
     background-image: url("../img/sedona-main-foto-overlay.png");
     background-repeat: no-repeat;
-    margin-top: 20px;
-    min-height: 57px;
 }
 .features-title {
     min-height: 105px;
@@ -570,7 +576,7 @@ body {
     min-height: 217px;
 }
 .conditions-choose {
-    width: 183px;
+    width: 184px;
     margin-left: 72px;
     float: left;
 }
@@ -581,37 +587,39 @@ body {
     color: #ffffff;
     margin-top: 27px;
 }
-.conditions-option {
-    position: relative;
-    font-size: 14px;
-    line-height: 21px;
-    color: #ffffff;
-    margin-top: 25px;
-}
 .conditions-choose input[type="checkbox"] {
     display: none;
 }
 .label-checkbox {
     position: relative;
+    display: block;
+    width: 184px;
+    margin-top: 24px;
+    height: 22px;
     padding-left: 40px;
+    color: #ffffff;
+    font-size: 14px;
+    line-height: 21px;
     cursor: pointer;
 }
-.label-checkbox input[type="checkbox"]+.checkbox-indicator {
+.label-checkbox::before {
+    content: "";
     position: absolute;
-    top: -3px;
-    left: -1px;
+    display: block;
+    top: 0px;
+    left: 0px;
     width: 26px;
     height: 22px;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
     background-position: -1813px 0px;
 }
-.label-checkbox input[type="checkbox"]:disabled +.checkbox-indicator {
+input[type="checkbox"]:disabled +.label-checkbox::before {
     background-position: -1689px 0px;
 }
-.label-checkbox input[type="checkbox"]:checked +.checkbox-indicator {
+input[type="checkbox"]:checked +.label-checkbox::before {
     background-position: -2160px 0px;
 }
-.label-checkbox input[type="checkbox"]:checked:disabled +.checkbox-indicator {
+input[type="checkbox"]:checked:disabled +.label-checkbox::before {
     background-position: -2028px 0px;
 }
 .price-choose {
