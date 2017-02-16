@@ -14,6 +14,10 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     background-color: #f2f2f2;
 }
+img {
+    max-width: 100%; 
+    height: auto;
+}
 .hotels-description h1 {
     font-size: 21px;
     line-height: 26px;
@@ -48,6 +52,7 @@ body {
 }
 .nav-list li {
     display: inline-block;
+    vertical-align: top;
     width: 240px;
     min-height: 56px;
     text-align: center;
@@ -101,7 +106,7 @@ body {
 .banner::after {
     content: "";
     position: absolute;
-    top: 451px;
+    bottom: 0px;
     left: 0px;
     width: 1200px;
     height: 57px;
@@ -324,6 +329,8 @@ body {
     width: 111px;
     min-height: 38px;
     padding-top: 10px;
+    overflow: hidden;
+    text-overflow: clip;
     font-size: 14px;
     font-weight: bold;
 }
@@ -537,7 +544,7 @@ body {
     float: left;
     width: 400px;
     opacity: 0.9;
-    padding-left: 102px;
+    padding-left: 100px;
     padding-right: 103px;
 }
 .footer-copyright p {
@@ -837,7 +844,6 @@ li.sort-left {
     float: left;
 }
 .hotels-description {
-    position: relative;
     width: 363px;
     min-height: 100px;
     margin-left: 30px;
@@ -864,7 +870,7 @@ li.sort-left {
     float: left;
     font-size: 14px;
     line-height: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
     width: 115px;
 }
 .hotel-price {
@@ -873,24 +879,26 @@ li.sort-left {
     float: left;
     font-size: 14px;
     line-height: 26px;
-    margin-bottom: 40px;
+    margin-bottom: 12px;
+    margin-right: 130px;
     width: 115px;
 }
 .hotels-button {
-    position: absolute;
+    display: inline-block;
+    vertical-align: top;
     color: #ffffff;
     text-decoration: none;
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
-    padding-left: 17px;
-    padding-top: 3px;
+    padding: 3px 17px;
+    margin-right: 2px;
+    overflow: hidden;
+    text-overflow: clip;
 }
 .hotels-details {
-    bottom: 5px;
-    left: 0px;
     width: 110px;
-    height: 27px;
+    min-height: 27px;
     background-color: #81b3d2;
 }
 .hotels-details:hover {
@@ -902,10 +910,8 @@ li.sort-left {
     color: rgba(255, 255, 255, 0.3);
 }
 .hotels-booking {
-    bottom: 5px;
-    left: 116px;
     width: 142px;
-    height: 27px;
+    min-height: 27px;
     background-color: #766357;
 }
 .hotels-booking:hover {
@@ -927,23 +933,26 @@ li.sort-left {
     float: right;
 }
 .rating-name {
-    position: absolute;
-    bottom: 5px;
-    right: 0px;
+    display: inline-block;
+    vertical-align: top;
     width: 110px;
-    height: 27px;
+    min-height: 27px;
     background-color: #f2f2f2;
     color: #666666;
     text-decoration: none;
     font-size: 14px;
     line-height: 21px;
+    margin-top: 67px;
     padding-left: 15px;
-    padding-top: 3px;
+    padding-right: 10px;
+    padding-top: 4px;
+    overflow: hidden;
+    text-overflow: clip;
 }
 .rating::before {
     content: "";
     position: absolute;
-    top: 5px;
+    top: 4px;
     right: 0;
     display: block;
     background: transparent url("../img/sprite-sheet.png") no-repeat;
