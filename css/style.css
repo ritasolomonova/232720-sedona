@@ -330,7 +330,7 @@ img {
     min-height: 38px;
     padding-top: 10px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     font-size: 14px;
     font-weight: bold;
 }
@@ -602,7 +602,7 @@ img {
     display: block;
     width: 184px;
     margin-top: 24px;
-    height: 22px;
+    min-height: 22px;
     padding-left: 40px;
     color: #ffffff;
     font-size: 14px;
@@ -891,10 +891,11 @@ li.sort-left {
     font-size: 14px;
     line-height: 21px;
     font-weight: bold;
-    padding: 3px 17px;
+    padding-top: 3px;
+    padding-left: 17px;
     margin-right: 2px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
 }
 .hotels-details {
     width: 110px;
@@ -947,7 +948,7 @@ li.sort-left {
     padding-right: 10px;
     padding-top: 4px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
 }
 .rating::before {
     content: "";
